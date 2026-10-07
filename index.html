@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember & Bean | Cafe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="#home">EMBER <span>&</span> BEAN</a>
+  <nav><a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#reserve">Reserve</a></nav>
+  <a class="reserve-btn" href="#reserve">Book a Table</a>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div>
+    <p class="eyebrow">COFFEE • FOOD • COMMUNITY</p>
+    <h1>Your daily ritual,<br><em>made better.</em></h1>
+    <p>Specialty coffee, comforting food and a warm corner to slow down, connect and enjoy the moment.</p>
+    <div class="actions"><a class="btn dark" href="#menu">Explore Menu</a><a class="btn light" href="#reserve">Reserve a Table</a></div>
+  </div>
+  <div class="hero-art"><div class="cup">☕</div><div class="hero-note">Freshly brewed<br><strong>Every morning</strong></div></div>
+</section>
+
+<section id="menu" class="section">
+  <div class="section-head"><div><p class="eyebrow">OUR MENU</p><h2>Good food. Great coffee.</h2></div><div id="menuFilters" class="chips"><button class="chip active" data-cat="All">All</button><button class="chip" data-cat="Coffee">Coffee</button><button class="chip" data-cat="Food">Food</button><button class="chip" data-cat="Dessert">Dessert</button><button class="chip" data-cat="Beverage">Beverage</button></div></div>
+  <div id="menuGrid" class="menu-grid"></div>
+</section>
+
+<section id="about" class="about">
+  <div class="about-photo">🌿<span>Since 2018</span></div>
+  <div><p class="eyebrow">OUR STORY</p><h2>A little cafe with a big heart.</h2><p>Ember & Bean began with a simple idea: create a welcoming neighborhood space where carefully sourced coffee and honest food bring people together.</p><div class="stats"><div><strong>7+</strong><span>Years brewing</span></div><div><strong>30+</strong><span>Menu favourites</span></div><div><strong>4.9★</strong><span>Guest rating</span></div></div></div>
+</section>
+
+<section id="gallery" class="section gallery-section">
+  <div class="section-head"><div><p class="eyebrow">THE SPACE</p><h2>Come as you are.</h2></div></div>
+  <div class="gallery"><div>☕<small>Morning coffee</small></div><div>🥐<small>Fresh bakes</small></div><div>🪴<small>Cozy corners</small></div><div>🍰<small>Sweet moments</small></div></div>
+</section>
+
+<section id="reserve" class="reserve">
+  <div><p class="eyebrow">RESERVATIONS</p><h2>Save a seat for your next catch-up.</h2><p>Planning a coffee date, team lunch or quiet evening? Send us your reservation request.</p></div>
+  <form id="reservationForm" class="form">
+    <div class="row"><label>Name<input id="rname" required placeholder="Your name"></label><label>Phone<input id="rphone" required pattern="[0-9]{10}" placeholder="10-digit mobile"></label></div>
+    <div class="row"><label>Date<input id="rdate" type="date" required></label><label>Time<input id="rtime" type="time" required></label></div>
+    <label>Special request<textarea id="request" rows="4" placeholder="Birthday, window seat, dietary note..."></textarea></label>
+    <button class="btn dark full" type="submit">Request Reservation</button>
+    <p id="reserveMessage" class="message"></p>
+  </form>
+</section>
+</main>
+
+<footer>
+  <div><a class="brand" href="#home">EMBER <span>&</span> BEAN</a><p>Specialty coffee and comforting food in a welcoming space.</p></div>
+  <div><strong>Visit</strong><p>12 Coffee Lane<br>Bengaluru, Karnataka</p></div>
+  <div><strong>Hours</strong><p>Mon–Fri: 8 AM–9 PM<br>Sat–Sun: 9 AM–10 PM</p></div>
+  <div><strong>Connect</strong><p>Instagram • Facebook<br>hello@emberbean.example</p></div>
+  <p class="copyright">© 2026 Ember & Bean. Demo cafe website for web development internship.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
